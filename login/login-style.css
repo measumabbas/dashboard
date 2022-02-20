@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+    font-family: 'Nunito', sans-serif;
+}
+
+.fontAwesome {
+    font-family: 'Helvetica', FontAwesome, sans-serif;
+    color: #000;
+    font-size: 20px;
+  }
+
+body{
+    background-image: url('../images/login-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.container{
+    width: 100vw;
+    height: 110vh;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form.form{
+   
+    box-shadow: 0 2rem 4rem #000;
+    padding: 30px;
+    width: 400px;
+    border-radius: 5px;
+}
+.form p{
+    color: #fff;
+    font-size: 35px;
+    letter-spacing: 2px;
+    line-height: 1.7;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.inputs input{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 14px 5px;
+    color: #000;
+    border: none;
+    font-size: 18px;
+}
+.inputs input:focus{
+    outline: none;
+}
+
+.font{
+    background-color: #fff;
+    height: 49px;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+}
+.font i{
+    font-size: 20px;
+    color: #333;
+}
+
+.inputs .input{
+    display: flex;
+    /* align-items: center; */
+    /* height: 20px; */
+}
+.forget-pass{
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+a{
+    text-decoration: none;
+}
+
+input[type='submit']{
+    width: 100%;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+span.login-with{
+    text-align: center;
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.social-media .fb{
+    background-color: #074888;
+    padding: 10px 15px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+.social-media .fb i,.social-media .insta i{
+   color: #fff;
+   margin-right: 10px;
+   font-size: 18px;
+  
+}
+.social-media .insta{
+    background-color: #e74c3c;
+    padding: 10px 15px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 17px;
+
+}
+.sign-up{
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+.sign-up span a{
+    color: #e74c3c;
+}
+
+input[type='submit']:hover{
+    background-color: rgba(15, 140, 223, 0.3);
+    /* border: 1px solid #3498db; */
+}
+
+.social-media .fb:hover{
+    transform: translateY(-4px);
+}
+.social-media .insta:hover{
+    transform: translateY(-4px);
+}
