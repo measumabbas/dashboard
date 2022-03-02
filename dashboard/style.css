@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap');
+:root{
+    --bs-font-sans-serif: "Inter",sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--bs-font-sans-serif);
+}
+svg{
+    width: 21px;
+    height: 21px;
+}
+
+/* #374151; */
+
+.volt{
+    transform: translateX(5px);
+}
+
+.side-bar{
+    background-color:#1f2937 ;
+    width: 19%;
+    /* height: 100vh; */
+    /* position: fixed; */
+    padding: 30px 20px;
+}
+
+.list-item{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.list-item:hover{
+    background-color: #374151;
+    border-radius: 7px;
+}
+
+.list-item .icon i.fa-bolt{
+    color: #f0bc74;
+}
+.list-item .icon{
+    color: #9ca3af;
+}
+.list-item .text p{
+    color: #fff;
+    font-size: 17px;
+}
+
+.pro{
+    background-color: #f0bc74;
+    padding: 3px;
+    color: #000;
+    font-size: 13px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.border{
+    border-bottom: 1px solid rgb(71, 68, 68);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.upgrade .pro{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+    
+}
+
+.upgrade .pro:hover{
+    background-color: #eeb15d;
+}
+.upgrade .pro p i{
+    margin-right: 10px;
+    /* font-weight: lighter; */
+}
+
+.list-item .pro{
+    position: absolute;
+    right: 11px;
+    /* font-size: 16px; */
+}
+
+.bootstrap-drop{
+    padding-left:50px;
+}
+
+.chevron{
+    color: #fff;
+    position: absolute;
+    right: 20px;
+}
