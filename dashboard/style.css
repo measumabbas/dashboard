@@ -25,9 +25,9 @@ svg{
 
 .side-bar{
     background-color:#1f2937 ;
-    width: 19%;
+    width: 270px;
     /* height: 100vh; */
-    /* position: fixed; */
+    position: fixed;
     padding: 30px 20px;
 }
 
@@ -116,7 +116,44 @@ svg{
     justify-content: center;
 
 }
-.bootstrap-drop:hover{
+.page-drop{
+    color: #fff;
+    /* overflow: hidden; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    /* padding: 10px; */
+    gap: 10px;
+    
+    cursor: pointer;
+    height: 0;
+    overflow: hidden;
+    
+}
+.component-drop{
+    color: #fff;
+    /* overflow: hidden; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    /* padding: 10px; */
+    gap: 10px;
+    
+    cursor: pointer;
+    height: 0;
+    overflow: hidden;
+}
+.page-drop .text,.component-drop .text{
+    /* padding: 7px; */
+    padding-left: 50px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+   
+}
+
+.bootstrap-drop:hover,.page-drop .text:hover,.component-drop .text:hover{
     background-color: #374151;
     border-radius: 7px;
 }
@@ -126,7 +163,9 @@ svg{
     padding: 10px;
 
 }
-
+.page-drop-show,.component-drop-show{
+    height: 400px;
+}
 .rotate{
     transform: rotate(90deg);
 }
