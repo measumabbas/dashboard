@@ -9,6 +9,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--bs-font-sans-serif);
+    transition: all .2s linear;
+    /* overflow: hidden; */
 }
 svg{
     width: 21px;
@@ -90,12 +92,41 @@ svg{
     /* font-size: 16px; */
 }
 
-.bootstrap-drop{
-    padding-left:50px;
-}
 
 .chevron{
     color: #fff;
     position: absolute;
     right: 20px;
+}
+
+.bootstrap-drop{
+    /* padding-left:100px; */
+    height: 0px;
+    /* display: flex; */
+    gap: 20px;
+    /* align-items: center; */
+    /* padding: 10px; */
+    padding-left: 50px;
+    cursor: pointer;
+    /* position: relative; */
+    color: #fff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.bootstrap-drop:hover{
+    background-color: #374151;
+    border-radius: 7px;
+}
+
+.bootstrap-show{
+    height: 50px;
+    padding: 10px;
+
+}
+
+.rotate{
+    transform: rotate(90deg);
 }
