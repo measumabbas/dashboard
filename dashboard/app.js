@@ -26,3 +26,16 @@ const component = document.querySelector('.component')
     const pageChevron = document.querySelector('.component-chevron')
     pageChevron.classList.toggle('rotate')
 })
+
+
+const bell = document.querySelector('.fa-bell');
+
+bell.addEventListener('click',handleClick);
+
+
+function handleClick(){
+    const div = document.querySelector('.notifications')
+    div.classList.toggle('show')
+    const notify = document.querySelector('.dot')
+    notify.style.display='none'
+}
