@@ -1,4 +1,3 @@
-console.log('Dashboard')
 
 const tables = document.querySelector('.table');
 tables.addEventListener('click',()=>{
@@ -6,12 +5,11 @@ tables.addEventListener('click',()=>{
     const chevron = document.querySelector('.fa-chevron-right')
     chevron.classList.toggle('rotate')
     bootstrap.classList.toggle('bootstrap-show')
-    // bootstrap.style.paddingLeft='20px'
-    console.log('clicked')
+  
 })
-// page-drop-show
+
 const page = document.querySelector('.page');
-// console.log(page);
+
 page.addEventListener('click',()=>{
     const pageDown = document.querySelector('.page-drop')
     pageDown.classList.toggle('page-drop-show')
@@ -28,14 +26,38 @@ const component = document.querySelector('.component')
 })
 
 
+
 const bell = document.querySelector('.fa-bell');
+const notifications = document.querySelector('.notifications')
+const profile = document.querySelector('.profile');
+const profile2 = document.querySelector('.profile2')
 
-bell.addEventListener('click',handleClick);
+
+bell.addEventListener('click',()=>{
+    if(notifications.classList.contains('show')){
+        notifications.classList.remove('show')
+    }
+    else{
+        notifications.classList.add('show')
+        document.querySelector('.dot').style.display='none';
+        if(profile2.classList.contains('show2')){
+            profile2.classList.remove('show2')
+        }
+    }
+});
 
 
-function handleClick(){
-    const div = document.querySelector('.notifications')
-    div.classList.toggle('show')
-    const notify = document.querySelector('.dot')
-    notify.style.display='none'
-}
+
+
+profile.addEventListener('click',()=>{
+
+    if(profile2.classList.contains('show2')){
+        profile2.classList.remove('show2')
+    }
+    else{
+        profile2.classList.add('show2')
+        if(notifications.classList.contains('show')){
+            notifications.classList.remove('show')
+        }
+    }
+})

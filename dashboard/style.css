@@ -201,6 +201,7 @@ svg{
     transform: translateX(270px);
     width: 80%;
     position: relative;
+    padding-bottom: 500px;
     
 }
 .graph-bar .header{
@@ -260,6 +261,7 @@ svg{
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
 }
 .fa-bell{
     font-size: 20px;
@@ -342,4 +344,49 @@ p.min{
 
 .notify{
     position: relative;
+}
+.profile2{
+    background-color: #fff;
+    width: 200px;
+    /* padding: 8px; */
+    position: absolute;
+    right: 10px;
+    top: 75px;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    display: none;
+    /* display: block; */
+    
+    
+}
+.show2{
+    display: block;
+}
+.support{
+    padding-bottom: 5px;
+    border-bottom: 2px solid #e5e7eb;
+}
+.profile2 .items{
+    display: flex;
+    align-items: center;
+    gap :10px;
+    padding: 10px;
+    padding-bottom: 10px;
+}
+
+.profile2 .items p{
+    font-size: 15px;
+    font-weight: bold;
+
+}
+.profile2 .items > svg{
+    /* display: flex; */
+    color: #9ca3af;
+}
+.profile2 .items:hover{
+    background-color: #f2f4f6;
+    cursor: pointer;
+}
+.items.log > svg{
+    color: #e11d48;
 }
