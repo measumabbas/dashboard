@@ -61,3 +61,18 @@ profile.addEventListener('click',()=>{
         }
     }
 })
+
+
+// const newTask = document.querySelector('.new-task');
+// const newTaskDrop = document.querySelector('.new-task-drop');
+
+// newTask.addEventListener('click',()=>{
+//     newTaskDrop.classList.toggle('show3')
+// })
+
+const newTask = document.querySelector('.new-task')
+const newTaskDrop = document.querySelector('.new-task-drop')
+
+newTask.addEventListener('click',()=>{
+    newTaskDrop.classList.toggle('show3')
+})
