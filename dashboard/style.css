@@ -204,7 +204,7 @@ svg{
 .graph-bar{
     background-color:#f2f4f6 ;
     transform: translateX(270px);
-    width: 80%;
+    width: calc(100% - 270px);
     position: relative;
     padding-bottom: 50px;
     
@@ -475,7 +475,8 @@ a.weak{
     /* padding-right: 10px; */
 }
 .image img{
-    object-fit: cover;
+    /* object-fit: cover; */
+    width: 100%;
 }
 
 
@@ -1024,5 +1025,17 @@ justify-content: space-between;
 
 
 @media(max-width:1200px){
-    
+    .testimonials{
+
+        grid-template-columns: 1fr 1fr;
+    }
+    .page-visits-container{
+      
+        grid-template-columns: 1fr;
+
+    }
+    .down-main{
+     
+        grid-template-columns: 1fr;
+    }
 }
