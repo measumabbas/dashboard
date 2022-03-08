@@ -76,3 +76,23 @@ const newTaskDrop = document.querySelector('.new-task-drop')
 newTask.addEventListener('click',()=>{
     newTaskDrop.classList.toggle('show3')
 })
+
+
+// Hamburger script
+
+const hamburger = document.querySelector('.fa-bars');
+const sideBar = document.querySelector('.side-bar');
+hamburger.addEventListener('click',()=>{
+    
+    if(!sideBar.hasAttribute('style')){
+        // sideBar.removeAttribute('style')
+        sideBar.setAttribute('style','top:0px')
+        // console.log('no style attribute')
+    }
+    
+    else {
+        sideBar.removeAttribute('style')
+        // console.log('has style attribute')
+    }
+    
+})

@@ -38,6 +38,8 @@ svg{
     padding: 30px 20px;
     /* overflow: visible; */
     overflow-y: scroll;
+    /* position: absolute; */
+   
 }
 .side-bar::-webkit-scrollbar{
     width: 7px;
@@ -198,7 +200,8 @@ svg{
 /* Main side styling */
 
 .dashboard-container{
-    display: flex;
+    /* display: flex; */
+    position: relative;
 }
 
 .graph-bar{
@@ -1011,6 +1014,7 @@ background-color: #fff;
 padding: 50px;
 display: flex;
 justify-content: space-between;
+/* border: 1px solid red; */
 }
 
 .footer-nav ul{
@@ -1023,6 +1027,28 @@ justify-content: space-between;
 }
 
 
+.hamburger{
+    background-color: #1F2937;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 40px;
+    align-items: center;
+    display: none;
+}
+
+.ham-logo i{
+    color: #eeb15d;
+    font-size: 20px;
+}
+.ham-icon i{
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.side-bar-active{
+    top: 0;
+}
 
 @media(max-width:1200px){
     .testimonials{
@@ -1036,6 +1062,36 @@ justify-content: space-between;
     }
     .down-main{
      
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:990px){
+    .hamburger{
+        display: flex;
+    }
+
+    .side-bar{
+        /* display: none; */
+        position: absolute;
+        z-index: 1;
+        top: -700px;
+        height: 110vh;
+    }
+    .graph-bar{
+        width: 100vw;
+        transform: translateX(0px);
+        z-index: -1;
+    }
+}
+
+@media(max-width:766px){
+    /* to do */
+}
+@media(max-width:564px){
+
+    .testimonials{
+
         grid-template-columns: 1fr;
     }
 }
