@@ -6,7 +6,7 @@
     box-sizing: border-box;
     transition: all .2s linear;
     font-family: 'Nunito', sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .fontAwesome {
@@ -47,15 +47,19 @@ form.form{
 }
 .inputs input{
     width: 100%;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     padding: 14px 5px;
     color: #000;
     border: none;
     font-size: 18px;
+    /* border: 1px solid red; */
+    /* border-radius: 5px; */
 }
 .inputs input:focus{
     outline: none;
 }
+
+
 
 .font{
     background-color: #fff;
@@ -73,8 +77,11 @@ form.form{
 
 .inputs .input{
     display: flex;
-    /* align-items: center; */
-    /* height: 20px; */
+    padding-bottom: 0px;
+    /* border: 2px solid red; */
+    /* height: 100px; */
+    margin-bottom: 10px;
+    /* border-radius: 5px; */
 }
 .forget-pass{
     color: #fff;
@@ -101,6 +108,11 @@ input[type='submit']{
     letter-spacing: 2px;
     margin-bottom: 30px;
 }
+input[type='submit']:disabled {
+    background-color: #2e2e2e;
+    cursor: initial;
+}
+
 
 span.login-with{
     text-align: center;
@@ -152,14 +164,24 @@ span.login-with{
     color: #e74c3c;
 }
 
-input[type='submit']:hover{
-    background-color: rgba(15, 140, 223, 0.3);
-    /* border: 1px solid #3498db; */
-}
 
 .social-media .fb:hover{
     transform: translateY(-4px);
 }
 .social-media .insta:hover{
     transform: translateY(-4px);
+}
+
+.email-error p{
+    font-size: 15px;
+    text-align: left;
+    display: none;
+}
+
+.email-input{
+    border: 2px solid white;
+}
+
+.pass-input{
+    border: 2px solid white;
 }

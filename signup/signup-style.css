@@ -46,7 +46,7 @@ form.form{
 }
 .inputs input{
     width: 100%;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     padding: 14px 10px;
     color: #000;
     border: none;
@@ -72,8 +72,14 @@ form.form{
     display: flex;
     /* align-items: center; */
     /* height: 20px; */
+    
+    margin-bottom: 15px;
+    border-radius: 8px;
 }
 
+.name-input, .email-input, .pass-input, .cpass-input{
+    border: 2px solid #fff;
+}
 a{
     text-decoration: none;
 }
@@ -93,10 +99,11 @@ input[type='submit']{
     margin-bottom: 30px;
     border-radius: 5px;
 }
-input[type='submit']:hover{
-    background-color: rgba(15, 140, 223, 0.3);
-    /* border: 1px solid #3498db; */
+input[type='submit']:disabled {
+    background-color: #2e2e2e;
+    cursor: initial;
 }
+
 
 span.login-with{
     text-align: center;

@@ -13,16 +13,20 @@
         <form class="form">
             <p>Login Form</p>
             <div class="inputs">
-                <div class="input">
-                    <span class="font"><i class="fas fa-user"></i></span><input type="text" class="fontAwesome" name="emailAddress" placeholder="Email or Phone" >
+                <div class="input email-input">
+                    <span class="font"><i class="fas fa-user"></i></span>
+                    <input type="text" class="fontAwesome" name="emailAddress" placeholder="Email or Phone" id="email">
+                    
                 </div>
-                <div class="input">
-                    <span class="font"><i class="fas fa-lock"></i></span><input type="text" class="fontAwesome" name="emailAddress" placeholder="Enter your password" >
+               
+                <div class="input pass-input">
+                    <span class="font"><i class="fas fa-lock"></i></span>
+                    <input type="password" class="fontAwesome" name="emailAddress" placeholder="Enter your password" id="password">
                 </div>
               
             </div>
             <a class="forget-pass" href="#">Forgot password ?</a>
-            <input type="submit" value="Login">
+            <input type="submit" value="Login" id="submit">
         
             <span class="login-with">Or Login With</span>
             <div class="social-media">
