@@ -809,12 +809,15 @@ p.total-orders-per{
     display: flex;
     align-items: center;
     gap: 15px;
+    position: relative;
+   
 }
 .progress-data .progress-inner{
     display: flex;
     /* align-items: center; */
     justify-content: space-between;
-    width:280%;
+    /* width:280%; */
+    /* border: 1px solid red; */
     /* gap: 20px; */
     /* border: 1px solid red; */
 }
@@ -822,6 +825,8 @@ p.total-orders-per{
     display: flex;
     flex-direction: column;
     gap: 15px;
+    /* border : 1px solid red; */
+    width: 100%;
 }
 
 .progress-data p.per{
@@ -830,7 +835,7 @@ p.total-orders-per{
 }
 .progress-border{
     display: flex;
-    width: 280%;
+    /* width: 280%; */
 }
 
 .color-line{
@@ -1050,6 +1055,60 @@ justify-content: space-between;
     top: 0;
 }
 
+.side-bar-profile{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.side-bar-profile img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.side-bar-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.side-bar-detail > p{
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+.side-bar-button{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    cursor: pointer;
+
+
+}
+.side-bar-button > svg{
+    color: rgb(83, 81, 81);
+}
+.side-bar-button p{
+    color: rgb(92, 89, 89);
+}
+.side-bar-profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(135, 137, 139, 0.125);
+    display: none;
+}
+.side-bar-profile > svg{
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+/* Media queries */
+
 @media(max-width:1200px){
     .testimonials{
 
@@ -1079,19 +1138,27 @@ justify-content: space-between;
         height: 110vh;
     }
     .graph-bar{
-        width: 100vw;
+        width: 100%;
         transform: translateX(0px);
         z-index: -1;
     }
 }
 
 @media(max-width:766px){
-    /* to do */
+    .side-bar{
+        width: 100%;
+    }
+    .side-bar-profile{
+        display: flex;
+    }
 }
-@media(max-width:564px){
+@media(max-width:580px){
 
     .testimonials{
-
         grid-template-columns: 1fr;
+    }
+
+    .search input{
+        width: 50px;
     }
 }
