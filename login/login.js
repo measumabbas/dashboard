@@ -1,5 +1,6 @@
 
 
+
 document.querySelector('#email').addEventListener('input',validateEmail);
 document.querySelector('#password').addEventListener('input', validatePassword);
 const emailInput = document.querySelector('.email-input');
@@ -36,3 +37,10 @@ function validateEmail(){
     }
   
 }
+
+
+login.addEventListener('click',(e)=>{
+  e.preventDefault()
+  console.log('button clicked');
+  window.location.href='/dashboard/dashboard.html'
+})
