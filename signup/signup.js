@@ -70,3 +70,6 @@ function validateName() {
 }
 
 
+login.addEventListener('click',()=>{
+    window.location.href='/login/login.html'
+})

@@ -100,3 +100,15 @@ const cross = document.querySelector('.cross-icon');
 cross.addEventListener('click', () => {
     sideBar.removeAttribute('style');
 })
+
+
+const logout = document.getElementsByClassName('log')[0]
+logout.addEventListener('click',()=>{
+    window.location.href='/login/login.html';
+})
+
+const logout2 = document.querySelector('.side-bar-button');
+
+logout2.addEventListener('click',()=>{
+    window.location.href='/login/login.html';
+})

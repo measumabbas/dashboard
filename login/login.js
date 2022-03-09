@@ -1,5 +1,6 @@
 
-
+localStorage.setItem('email','maisumabbas.charbu@gmail.com')
+localStorage.setItem('password','2019kiubs1006')
 
 document.querySelector('#email').addEventListener('input',validateEmail);
 document.querySelector('#password').addEventListener('input', validatePassword);
@@ -42,5 +43,17 @@ function validateEmail(){
 login.addEventListener('click',(e)=>{
   e.preventDefault()
   console.log('button clicked');
-  window.location.href='/dashboard/dashboard.html'
+  const enteredEmail = document.getElementById('email').value;
+  const enteredPassword = document.getElementById('password').value;
+
+  const actEmail = localStorage.getItem('email');
+  const actPass = localStorage.getItem('password')
+
+  if(actEmail === enteredEmail && enteredPassword === actPass){
+    window.location.href='/dashboard/dashboard.html'
+  }
+
+  else{
+    alert('Email or pasword is incorrect')
+  }
 })
