@@ -54,6 +54,12 @@ login.addEventListener('click',(e)=>{
   }
 
   else{
-    alert('Email or pasword is incorrect')
+    const alert = document.querySelector('.alert');
+
+    alert.style.top='20px';
+
+    setTimeout(() => {
+      alert.style.top='-220px'
+    }, 2000);
   }
 })

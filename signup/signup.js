@@ -70,6 +70,8 @@ function validateName() {
 }
 
 
-login.addEventListener('click',()=>{
-    window.location.href='/login/login.html'
+login.addEventListener('click',(e)=>{
+
+    e.preventDefault();
+    window.location.href='/dashboard/dashboard.html'
 })

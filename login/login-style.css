@@ -6,7 +6,7 @@
     box-sizing: border-box;
     transition: all .2s linear;
     font-family: 'Nunito', sans-serif;
-    /* overflow-x: hidden; */
+
 }
 
 .fontAwesome {
@@ -47,14 +47,12 @@ form.form{
 }
 .inputs input{
     width: 100%;
-    /* margin-bottom: 15px; */
+   
     padding: 14px 5px;
     color: #000;
     border: none;
     font-size: 18px;
-    /* border: 1px solid red; */
-    /* border-radius: 5px; */
-}
+}  
 .inputs input:focus{
     outline: none;
 }
@@ -78,10 +76,8 @@ form.form{
 .inputs .input{
     display: flex;
     padding-bottom: 0px;
-    /* border: 2px solid red; */
-    /* height: 100px; */
     margin-bottom: 10px;
-    /* border-radius: 5px; */
+    
 }
 .forget-pass{
     color: #fff;
@@ -185,3 +181,31 @@ span.login-with{
 .pass-input{
     border: 2px solid white;
 }
+
+.alert{
+    position: absolute;
+    top: -220px;
+    right: 100px;
+    z-index: 2000;
+    width: 300px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+    padding-top: 10px;
+    box-shadow: 0 1rem 1rem #000;
+}
+.alert p, .alert span{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.alert span{
+    text-align: left;
+}
+
+

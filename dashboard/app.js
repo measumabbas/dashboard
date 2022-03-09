@@ -8,6 +8,16 @@ tables.addEventListener('click', () => {
 
 })
 
+const alert = document.querySelector('.alert')
+
+alert.style.top='5px';
+
+setTimeout(()=>{
+    alert.style.top='-100px'
+},2000)
+
+// window.addEventListener('on')
+
 const page = document.querySelector('.page');
 
 page.addEventListener('click', () => {
